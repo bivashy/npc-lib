@@ -30,11 +30,11 @@ dependencies {
 
   implementation(libs.paperLib)
   implementation(libs.geantyref)
-  implementation(libs.packetEvents)
 
   compileOnly(libs.netty)
   compileOnly(libs.paper)
   compileOnly(libs.protocolLib)
+  compileOnly(libs.packetEvents)
 }
 
 tasks.withType<ShadowJar> {
@@ -42,8 +42,6 @@ tasks.withType<ShadowJar> {
 
   relocate("io.papermc.lib", "com.github.juliarn.npclib.relocate.paperlib")
   relocate("io.leangen.geantyref", "com.github.juliarn.npclib.relocate.geantyref")
-  relocate("io.github.retrooper", "com.github.juliarn.npclib.relocate.io.packetevents")
-  relocate("com.github.retrooper", "com.github.juliarn.npclib.relocate.com.packetevents")
 
   dependencies {
     exclude("plugin.yml")
