@@ -24,6 +24,12 @@
 
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 
+repositories {
+  maven {
+    url = uri("https://repo.dmulloy2.net/repository/public/")
+  }
+}
+
 dependencies {
   api(projects.npcLibApi)
   implementation(projects.npcLibCommon)
