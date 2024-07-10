@@ -34,7 +34,7 @@ geantyref = { group = "io.leangen.geantyref", name = "geantyref", version.ref = 
 # platform api
 paper = { group = "io.papermc.paper", name = "paper-api", version.ref = "paper" }
 sponge = { group = "org.spongepowered", name = "spongeapi", version.ref = "sponge" }
-minestom = { group = "com.github.Minestom", name = "Minestom", version.ref = "minestom" }
+minestom = { group = "net.minestom", name = "minestom-snapshots", version.ref = "minestom" }
 
 # platform extensions
 paperLib = { group = "io.papermc", name = "paperlib", version.ref = "paperLib" }
